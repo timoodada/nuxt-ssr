@@ -1,0 +1,49 @@
+@import "variables";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+html,body{
+  margin: 0;
+  height: 100%;
+  background: $body-background;
+  color: $text-color;
+  font-size: 14px;
+}
+*{
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #f8f8f8;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+  background-clip: padding-box;
+  min-height: 28px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+ul,ol{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+li{
+  list-style: none;
+}
+a{
+  color: $text-color;
+  text-decoration: none;
+  &:hover{
+    color: $--color-primary;
+  }
+}
