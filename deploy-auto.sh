@@ -12,7 +12,6 @@ cp scripts/* -rf $temp
 cp nuxt.config.js -f $temp
 cp .npmrc -f $temp
 cp package.json -f $temp
-cp .gitignore -f $temp
 cd $temp
 
 # deploy to github
