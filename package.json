@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "deploy": "bash deploy.sh",
-    "deploy-auto": "bash deplay-auto.sh",
+    "deploy-auto": "bash deploy-auto.sh",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "test": "jest"
