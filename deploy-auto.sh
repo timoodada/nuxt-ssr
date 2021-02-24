@@ -25,6 +25,7 @@ else
   git config --global user.name "ChenJiYuan"
   git config --global user.email "chenjiyuan.123@qq.com"
 fi
+echo "$msg"
 git init
 git add .
 git commit -m "${msg}"
