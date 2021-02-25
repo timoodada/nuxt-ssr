@@ -5,7 +5,7 @@ const API_PREFIX = '/api';
 
 /**
 * @description Rewrite $axios to context as $http
-* @description Prefix will be added after using $http
+* @description Prefix will be added when using $http
 * @var Vue.prototype.$http
 */
 export default function({ $axios, redirect }, inject) {

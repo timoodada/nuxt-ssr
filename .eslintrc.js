@@ -39,5 +39,6 @@ module.exports = {
     }],
     'vue/singleline-html-element-content-newline': 0,
     'space-before-function-paren': ['error', 'never'],
+    'vue/max-attributes-per-line': 'off',
   },
 };
