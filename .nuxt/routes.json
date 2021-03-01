@@ -1,0 +1,29 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/home/runner/work/nuxt-ssr/nuxt-ssr/pages/404.vue",
+    "chunkName": "pages/404",
+    "_name": "_134aae22"
+  },
+  {
+    "name": "500",
+    "path": "/500",
+    "component": "/home/runner/work/nuxt-ssr/nuxt-ssr/pages/500.vue",
+    "chunkName": "pages/500",
+    "_name": "_2b08862c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/runner/work/nuxt-ssr/nuxt-ssr/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_23ec406e"
+  },
+  {
+    "name": "custom404",
+    "path": "*",
+    "component": "/home/runner/work/nuxt-ssr/nuxt-ssr/pages/404.vue",
+    "_name": "_134aae22"
+  }
+]
