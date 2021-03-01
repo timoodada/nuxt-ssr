@@ -4,11 +4,14 @@ import { combinePath } from '~/assets/helpers/utils';
 const API_PREFIX = '/api';
 
 /**
-* @description Rewrite $axios to context as $http
-* @description Prefix will be added when using $http
-* @var Vue.prototype.$http
-*/
-export default function({ $axios, redirect }, inject) {
+ * @description Rewrite $axios to context as $http
+ * @description Prefix will be added when using $http
+ * @var Vue.prototype.$http
+ */
+export default function({
+  $axios,
+  redirect,
+}, inject) {
   // Create a custom axios instance
   const http = $axios.create({
     timeout: 20000,
@@ -27,10 +30,15 @@ export default function({ $axios, redirect }, inject) {
 
   http.onError((error) => {
     if (process.server) {
-      if (error.response.status === 404) {
-        redirect('/404');
-      } else {
-        redirect('/500');
+      switch (error.response.status) {
+        case 404:
+          redirect('/404');
+          break;
+        case 401:
+          redirect('/login');
+          break;
+        default:
+          redirect('/500');
       }
     }
   });
